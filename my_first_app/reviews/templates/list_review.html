@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+</head>
+<body>
+    <table border=1 width=30%>
+        <th>Id</th>
+        <th>Review</th>
+        {% for review in reviews %}
+        <tr>
+            <td>{{ review.id }}</td>
+            <td>{{ review.review }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><a href="{% url 'index' %}">Home</a></p>
+</body>
+</html>
